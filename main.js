@@ -163,7 +163,8 @@ __webpack_require__.r(__webpack_exports__);
 // The list of file replacements can be found in `angular.json`.
 const environment = {
     production: false,
-    api: 'e859f7b0f9bf4433a416a401ae010f15',
+    // api:'e859f7b0f9bf4433a416a401ae010f15',
+    api: 'b39c62b3645fd4a271048fcdabcb8560'
 };
 /*
  * For easier debugging in development mode, you can import the following file
@@ -1037,48 +1038,48 @@ __webpack_require__.r(__webpack_exports__);
 class NewsService {
     constructor(_http) {
         this._http = _http;
-        this.BaseUrl = 'https://newsapi.org/v2';
+        this.BaseUrl = 'https://gnews.io/api/v4';
         this.API_KEY = src_environments_environment__WEBPACK_IMPORTED_MODULE_1__["environment"].api;
         this.country = 'us';
     }
     topHeading() {
         return this._http
-            .get(`${this.BaseUrl}${"/top-headlines" /* news */}?country=${this.country}&apiKey=${this.API_KEY}`)
+            .get(`${this.BaseUrl}${"/top-headlines" /* news */}?country=${this.country}&token=${this.API_KEY}`)
             .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["catchError"])(this.errorHandler));
     }
     toptech() {
         return this._http
-            .get(`${this.BaseUrl}${"/top-headlines?country=us&category=technology" /* technology */}&apiKey=${this.API_KEY}`)
+            .get(`${this.BaseUrl}${"/top-headlines?country=us&topic=technology" /* technology */}&token=${this.API_KEY}`)
             .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["catchError"])(this.errorHandler));
     }
     topSports() {
         return this._http
-            .get(`${this.BaseUrl}${"/top-headlines?country=us&category=sports" /* sports */}&apiKey=${this.API_KEY}`)
+            .get(`${this.BaseUrl}${"/top-headlines?country=us&topic=sports" /* sports */}&token=${this.API_KEY}`)
             .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["catchError"])(this.errorHandler));
     }
     topScience() {
         return this._http
-            .get(`${this.BaseUrl}${"/top-headlines?country=us&category=science" /* science */}&apiKey=${this.API_KEY}`)
+            .get(`${this.BaseUrl}${"/top-headlines?country=us&topic=science" /* science */}&token=${this.API_KEY}`)
             .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["catchError"])(this.errorHandler));
     }
     topHealth() {
         return this._http
-            .get(`${this.BaseUrl}${"/top-headlines?country=us&category=health" /* health */}&apiKey=${this.API_KEY}`)
+            .get(`${this.BaseUrl}${"/top-headlines?country=us&topic=health" /* health */}&token=${this.API_KEY}`)
             .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["catchError"])(this.errorHandler));
     }
     topGeneral() {
         return this._http
-            .get(`${this.BaseUrl}${"/top-headlines?country=us&category=general" /* general */}&apiKey=${this.API_KEY}`)
+            .get(`${this.BaseUrl}${"/top-headlines?country=us&topic=general" /* general */}&token=${this.API_KEY}`)
             .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["catchError"])(this.errorHandler));
     }
     topEntertainment() {
         return this._http
-            .get(`${this.BaseUrl}${"/top-headlines?country=us&category=entertainment" /* entertainment */}&apiKey=${this.API_KEY}`)
+            .get(`${this.BaseUrl}${"/top-headlines?country=us&topic=entertainment" /* entertainment */}&token=${this.API_KEY}`)
             .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["catchError"])(this.errorHandler));
     }
     topBusiness() {
         return this._http
-            .get(`${this.BaseUrl}${"/top-headlines?country=us&category=business" /* business */}&apiKey=${this.API_KEY}`)
+            .get(`${this.BaseUrl}${"/top-headlines?country=us&topic=business" /* business */}&token=${this.API_KEY}`)
             .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["catchError"])(this.errorHandler));
     }
     errorHandler(error) {
@@ -1286,7 +1287,7 @@ __webpack_require__.r(__webpack_exports__);
 var styles_CardComponent = [_card_component_scss_shim_ngstyle__WEBPACK_IMPORTED_MODULE_0__["styles"]];
 var RenderType_CardComponent = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵcrt"]({ encapsulation: 0, styles: styles_CardComponent, data: {} });
 
-function View_CardComponent_1(_l) { return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](0, 0, null, null, 10, "div", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](1, 0, null, null, 9, "div", [["class", "m-16"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](2, 0, null, null, 8, "div", [["class", "rounded-xl shadow-xl"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](3, 0, null, null, 0, "img", [["class", "rounded-t-xl w-full h-36 object-cover"]], [[8, "src", 4]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](4, 0, null, null, 6, "div", [["class", "flex flex-col p-7"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](5, 0, null, null, 1, "h2", [["class", "text-xl font-bold truncate mt-1"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](6, null, ["", ""])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](7, 0, null, null, 1, "p", [["class", "text-base text-gray-600 mt-1"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](8, null, ["", ""])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](9, 0, null, null, 1, "a", [["class", "button"], ["target", "_blank"]], [[8, "href", 4]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](-1, null, ["Read More"]))], null, function (_ck, _v) { var currVal_0 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵinlineInterpolate"](1, "", _v.context.$implicit.urlToImage, ""); _ck(_v, 3, 0, currVal_0); var currVal_1 = _v.context.$implicit.title; _ck(_v, 6, 0, currVal_1); var currVal_2 = _v.context.$implicit.description; _ck(_v, 8, 0, currVal_2); var currVal_3 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵinlineInterpolate"](1, "", _v.context.$implicit.url, ""); _ck(_v, 9, 0, currVal_3); }); }
+function View_CardComponent_1(_l) { return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](0, 0, null, null, 15, "div", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](1, 0, null, null, 14, "div", [["class", "m-16"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](2, 0, null, null, 13, "div", [["class", "rounded-xl shadow-xl"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](3, 0, null, null, 0, "img", [["class", "rounded-t-xl w-full h-36 object-cover"]], [[8, "src", 4]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](4, 0, null, null, 11, "div", [["class", "flex flex-col p-7"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](5, 0, null, null, 1, "div", [["class", "\n              uppercase\n              text-xs text-yellow-700\n              bg-yellow-200\n              px-2\n              py-1\n              rounded-xl\n            "], ["style", "width: 140px;"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](6, null, [" ", " "])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](7, 0, null, null, 1, "h2", [["class", "text-xl font-bold truncate mt-1"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](8, null, ["", ""])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](9, 0, null, null, 1, "p", [["class", "text-base text-gray-600 mt-1"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](10, null, ["", ""])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](11, 0, null, null, 2, "div", [["class", "flex flex-row mt-5 items-center"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](12, 0, null, null, 1, "div", [["class", "font-bold mr-2 pt-5"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](13, null, ["Source : ", ""])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](14, 0, null, null, 1, "a", [["class", "button"], ["target", "_blank"]], [[8, "href", 4]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵted"](-1, null, ["Read More"]))], null, function (_ck, _v) { var currVal_0 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵinlineInterpolate"](1, "", _v.context.$implicit.image, ""); _ck(_v, 3, 0, currVal_0); var currVal_1 = _v.context.$implicit.publishedAt; _ck(_v, 6, 0, currVal_1); var currVal_2 = _v.context.$implicit.title; _ck(_v, 8, 0, currVal_2); var currVal_3 = _v.context.$implicit.description; _ck(_v, 10, 0, currVal_3); var currVal_4 = _v.context.$implicit.source.name; _ck(_v, 13, 0, currVal_4); var currVal_5 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵinlineInterpolate"](1, "", _v.context.$implicit.url, ""); _ck(_v, 14, 0, currVal_5); }); }
 function View_CardComponent_0(_l) { return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](0, 0, null, null, 2, "div", [["class", "grid grid-cols-3 p-8 gap-8"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵand"](16777216, null, null, 1, null, View_CardComponent_1)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](2, 278528, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_2__["NgForOf"], [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["TemplateRef"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["IterableDiffers"]], { ngForOf: [0, "ngForOf"] }, null)], function (_ck, _v) { var _co = _v.component; var currVal_0 = ((_co.newsdata == null) ? null : _co.newsdata.articles); _ck(_v, 2, 0, currVal_0); }, null); }
 function View_CardComponent_Host_0(_l) { return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵeld"](0, 0, null, null, 1, "app-card", [], null, null, null, View_CardComponent_0, RenderType_CardComponent)), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵdid"](1, 114688, null, 0, _card_component__WEBPACK_IMPORTED_MODULE_3__["CardComponent"], [], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
 var CardComponentNgFactory = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵccf"]("app-card", _card_component__WEBPACK_IMPORTED_MODULE_3__["CardComponent"], View_CardComponent_Host_0, { newsdata: "newsdata" }, {}, []);
