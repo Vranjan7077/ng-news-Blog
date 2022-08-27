@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! E:\New folder\news Blog\ng-newsBlog\src\polyfills.ts */"hN/g");
+module.exports = __webpack_require__(/*! D:\Projects\Angular\Projects-Angular\src\polyfills.ts */"hN/g");
 
 
 /***/ }),
